@@ -1,0 +1,191 @@
+{% extends 'base.html' %} {% block title %} Python Backend Developer {% endblock
+%} {% block content %}
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto min-h-screen">
+  <!-- Hero Section -->
+  <header class="mb-20">
+    <h1
+      class="text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-6 leading-tight"
+    >
+      Software Agency Website:
+      <span class="text-primary block">Technology Stack</span>
+    </h1>
+    <p
+      class="text-xl md:text-2xl text-on-surface-variant max-w-3xl leading-relaxed"
+    >
+      A comprehensive tech stack selected for scalability, security, and
+      performance in modern software agency operations.
+    </p>
+  </header>
+  <!-- Bento Grid Stack Layout -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Python Card -->
+    <div
+      class="bg-surface-container-low group p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border-b-2 border-transparent hover:border-primary flex flex-col justify-between min-h-[320px]"
+    >
+      <div>
+        <div
+          class="mb-8 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container/20 text-secondary"
+        >
+          <span
+            class="material-symbols-outlined"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >code</span
+          >
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-4 tracking-tight">
+          Python
+        </h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Core backend language for logic and data processing.
+        </p>
+      </div>
+      <div
+        class="mt-8 flex items-center text-xs font-bold tracking-widest text-secondary/60 uppercase"
+      >
+        Architectural Core
+      </div>
+    </div>
+    <!-- Flask Card -->
+    <div
+      class="bg-surface-container-low group p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border-b-2 border-transparent hover:border-primary flex flex-col justify-between min-h-[320px]"
+    >
+      <div>
+        <div
+          class="mb-8 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container/20 text-secondary"
+        >
+          <span
+            class="material-symbols-outlined"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >api</span
+          >
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-4 tracking-tight">
+          Flask
+        </h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Lightweight micro-framework for building the web application and APIs.
+        </p>
+      </div>
+      <div
+        class="mt-8 flex items-center text-xs font-bold tracking-widest text-secondary/60 uppercase"
+      >
+        Delivery System
+      </div>
+    </div>
+    <!-- MySQL Card -->
+    <div
+      class="bg-surface-container-low group p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border-b-2 border-transparent hover:border-primary flex flex-col justify-between min-h-[320px]"
+    >
+      <div>
+        <div
+          class="mb-8 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container/20 text-secondary"
+        >
+          <span
+            class="material-symbols-outlined"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >database</span
+          >
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-4 tracking-tight">
+          MySQL
+        </h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Relational database for structured data management.
+        </p>
+      </div>
+      <div
+        class="mt-8 flex items-center text-xs font-bold tracking-widest text-secondary/60 uppercase"
+      >
+        Data Persistence
+      </div>
+    </div>
+    <!-- GitHub Card -->
+    <div
+      class="bg-surface-container-low group p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border-b-2 border-transparent hover:border-primary flex flex-col justify-between min-h-[320px]"
+    >
+      <div>
+        <div
+          class="mb-8 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container/20 text-secondary"
+        >
+          <span
+            class="material-symbols-outlined"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >account_tree</span
+          >
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-4 tracking-tight">
+          GitHub
+        </h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Version control and CI/CD pipelines.
+        </p>
+      </div>
+      <div
+        class="mt-8 flex items-center text-xs font-bold tracking-widest text-secondary/60 uppercase"
+      >
+        DevOps Workflow
+      </div>
+    </div>
+    <!-- Docker Card -->
+    <div
+      class="bg-surface-container-low group p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border-b-2 border-transparent hover:border-primary flex flex-col justify-between min-h-[320px]"
+    >
+      <div>
+        <div
+          class="mb-8 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container/20 text-secondary"
+        >
+          <span
+            class="material-symbols-outlined"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >package_2</span
+          >
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-4 tracking-tight">
+          Docker
+        </h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Containerization for consistent environments across dev and
+          production.
+        </p>
+      </div>
+      <div
+        class="mt-8 flex items-center text-xs font-bold tracking-widest text-secondary/60 uppercase"
+      >
+        Virtualization
+      </div>
+    </div>
+    <!-- AWS Card -->
+    <div
+      class="bg-surface-container-low group p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border-b-2 border-transparent hover:border-primary flex flex-col justify-between min-h-[320px]"
+    >
+      <div>
+        <div
+          class="mb-8 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container/20 text-secondary"
+        >
+          <span
+            class="material-symbols-outlined"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >cloud</span
+          >
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-4 tracking-tight">AWS</h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Cloud infrastructure for hosting, storage, and scaling.
+        </p>
+      </div>
+      <div
+        class="mt-8 flex items-center text-xs font-bold tracking-widest text-secondary/60 uppercase"
+      >
+        Global Scaling
+      </div>
+    </div>
+  </div>
+  <!-- Decorative background elements -->
+  <div
+    class="fixed top-1/4 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10"
+  ></div>
+  <div
+    class="fixed bottom-1/4 -left-24 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none -z-10"
+  ></div>
+</main>
+{% endblock %}

@@ -1,0 +1,6 @@
+env-portfolio/
+__pycache__/
+*.pyc
+.env
+instance/
+.vscode/

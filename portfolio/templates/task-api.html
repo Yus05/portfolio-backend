@@ -1,0 +1,347 @@
+{% extends 'base.html' %} {% block title %} Python Backend Developer {% endblock
+%} {% block content %}
+<main class="flex-grow pt-32 pb-20 px-6 sm:px-12 max-w-7xl mx-auto w-full">
+  <!-- Hero Title Section -->
+  <header class="mb-16 relative">
+    <div
+      class="absolute -top-12 -left-12 w-64 h-64 bg-secondary/10 rounded-full blur-[100px]"
+    ></div>
+    <h1
+      class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-4 leading-none"
+    >
+      Project <span class="text-primary">Architecture</span>
+    </h1>
+    <p class="font-label text-sm uppercase tracking-[0.2em] text-secondary">
+      Task API Core Ecosystem
+    </p>
+  </header>
+  <!-- Technology Stack Grid -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Python Card -->
+    <div
+      class="group surface-container-low p-8 rounded-xl transition-all duration-500 hover:translate-y-[-4px] relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity"
+      >
+        <span class="material-symbols-outlined text-7xl" data-icon="code"
+          >code</span
+        >
+      </div>
+      <div class="flex items-center gap-3 mb-6">
+        <div
+          class="w-10 h-10 rounded-lg technical-gradient flex items-center justify-center"
+        >
+          <span
+            class="material-symbols-outlined text-on-primary"
+            data-icon="terminal"
+            >terminal</span
+          >
+        </div>
+        <h3 class="font-headline text-2xl font-semibold text-primary">
+          Python
+        </h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+        The backbone of our logic, providing high-level abstraction and robust
+        performance for backend operations.
+      </p>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Programming</span
+        >
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Backend</span
+        >
+      </div>
+    </div>
+    <!-- Flask Card -->
+    <div
+      class="group surface-container-low p-8 rounded-xl transition-all duration-500 hover:translate-y-[-4px] relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity"
+      >
+        <span class="material-symbols-outlined text-7xl" data-icon="api"
+          >api</span
+        >
+      </div>
+      <div class="flex items-center gap-3 mb-6">
+        <div
+          class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center border border-outline-variant/15"
+        >
+          <span
+            class="material-symbols-outlined text-primary"
+            data-icon="layers"
+            >layers</span
+          >
+        </div>
+        <h3 class="font-headline text-2xl font-semibold text-primary">Flask</h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+        A lightweight WSGI web application framework designed to make getting
+        started quick and easy, with the ability to scale up to complex
+        applications.
+      </p>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Framework</span
+        >
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >REST API</span
+        >
+      </div>
+    </div>
+    <!-- MySQL Card -->
+    <div
+      class="group bg-surface-container-high p-8 rounded-xl transition-all duration-500 hover:translate-y-[-4px] relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity"
+      >
+        <span class="material-symbols-outlined text-7xl" data-icon="database"
+          >database</span
+        >
+      </div>
+      <div class="flex items-center gap-3 mb-6">
+        <div
+          class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center border border-outline-variant/15"
+        >
+          <span
+            class="material-symbols-outlined text-secondary"
+            data-icon="storage"
+            >storage</span
+          >
+        </div>
+        <h3 class="font-headline text-2xl font-semibold text-on-surface">
+          MySQL
+        </h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+        Reliable relational data storage ensuring ACID compliance and
+        high-performance queries for task management.
+      </p>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Database</span
+        >
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >SQL</span
+        >
+      </div>
+    </div>
+    <!-- GitHub Card -->
+    <div
+      class="group surface-container-low p-8 rounded-xl transition-all duration-500 hover:translate-y-[-4px] relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity"
+      >
+        <span
+          class="material-symbols-outlined text-7xl"
+          data-icon="account_tree"
+          >account_tree</span
+        >
+      </div>
+      <div class="flex items-center gap-3 mb-6">
+        <div
+          class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center border border-outline-variant/15"
+        >
+          <span
+            class="material-symbols-outlined text-primary"
+            data-icon="history"
+            >history</span
+          >
+        </div>
+        <h3 class="font-headline text-2xl font-semibold text-primary">
+          GitHub
+        </h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+        Distributed version control and collaboration platform powering the
+        CI/CD pipeline of the Task API.
+      </p>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >VCS</span
+        >
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >DevOps</span
+        >
+      </div>
+    </div>
+    <!-- Docker Card -->
+    <div
+      class="group surface-container-low p-8 rounded-xl transition-all duration-500 hover:translate-y-[-4px] relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity"
+      >
+        <span class="material-symbols-outlined text-7xl" data-icon="package"
+          >package</span
+        >
+      </div>
+      <div class="flex items-center gap-3 mb-6">
+        <div
+          class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center border border-outline-variant/15"
+        >
+          <span class="material-symbols-outlined text-secondary" data-icon="box"
+            >box</span
+          >
+        </div>
+        <h3 class="font-headline text-2xl font-semibold text-on-surface">
+          Docker
+        </h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+        Containerization for consistent environment parity from local
+        development to production scaling.
+      </p>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Containers</span
+        >
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Infrastructure</span
+        >
+      </div>
+    </div>
+    <!-- AWS Card -->
+    <div
+      class="group surface-container-low p-8 rounded-xl transition-all duration-500 hover:translate-y-[-4px] relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity"
+      >
+        <span class="material-symbols-outlined text-7xl" data-icon="cloud"
+          >cloud</span
+        >
+      </div>
+      <div class="flex items-center gap-3 mb-6">
+        <div
+          class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center border border-outline-variant/15"
+        >
+          <span
+            class="material-symbols-outlined text-primary"
+            data-icon="cloud_done"
+            >cloud_done</span
+          >
+        </div>
+        <h3 class="font-headline text-2xl font-semibold text-primary">AWS</h3>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+        Global cloud infrastructure providing the scalability and reliability
+        required for enterprise-grade task processing.
+      </p>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Cloud</span
+        >
+        <span
+          class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label"
+          >Hosting</span
+        >
+      </div>
+    </div>
+  </section>
+  <!-- Technical Deep Dive (Bento Style) -->
+  <section class="mt-24">
+    <h2
+      class="font-headline text-3xl font-bold mb-8 text-on-surface flex items-center gap-4"
+    >
+      Architecture Breakdown
+      <div class="h-[1px] flex-grow bg-surface-variant"></div>
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+      <div
+        class="lg:col-span-8 recessed-block p-10 rounded-xl border border-outline-variant/10"
+      >
+        <span
+          class="font-label text-xs tracking-widest text-secondary uppercase mb-4 block"
+          >Deployment Flow</span
+        >
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div
+              class="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary font-bold text-xs"
+            >
+              01
+            </div>
+            <div>
+              <h4 class="font-headline font-semibold text-on-surface">
+                Commit &amp; Push
+              </h4>
+              <p class="text-on-surface-variant text-sm mt-1">
+                Developers push Python/Flask code to GitHub, triggering
+                automated test suites.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div
+              class="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary font-bold text-xs"
+            >
+              02
+            </div>
+            <div>
+              <h4 class="font-headline font-semibold text-on-surface">
+                Docker Image Build
+              </h4>
+              <p class="text-on-surface-variant text-sm mt-1">
+                CI/CD pipelines build specialized Docker images containing all
+                dependencies.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div
+              class="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary font-bold text-xs"
+            >
+              03
+            </div>
+            <div>
+              <h4 class="font-headline font-semibold text-on-surface">
+                AWS Orchestration
+              </h4>
+              <p class="text-on-surface-variant text-sm mt-1">
+                Images are deployed to AWS ECS, communicating with an RDS MySQL
+                instance for persistent storage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="lg:col-span-4 bg-[#001f28] p-10 rounded-xl relative overflow-hidden flex flex-col justify-center border border-outline-variant/10"
+      >
+        <div
+          class="absolute -bottom-10 -right-10 w-40 h-40 technical-gradient opacity-20 blur-3xl"
+        ></div>
+        <div
+          class="text-6xl font-headline font-bold text-[#55d8e1]/20 mb-4 select-none"
+        >
+          99.9%
+        </div>
+        <h4 class="font-headline text-xl font-bold text-on-surface mb-2">
+          Uptime Reliability
+        </h4>
+        <p class="text-on-surface-variant text-sm">
+          Leveraging AWS Multi-AZ deployments and Docker health checks to ensure
+          uninterrupted service availability.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,176 @@
+{% extends 'base.html' %} {% block title %} Python Backend Developer {% endblock
+%} {% block content %}
+<main class="pt-32 pb-24">
+  <section class="max-w-7xl mx-auto px-8 mb-16 relative">
+    <div
+      class="absolute -top-24 -left-12 w-96 h-96 bg-secondary-container/20 blur-[120px] rounded-full pointer-events-none"
+    ></div>
+    <div class="relative">
+      <span
+        class="font-label uppercase tracking-[0.3em] text-secondary text-xs mb-4 block font-bold"
+        >Project Architecture</span
+      >
+      <h1
+        class="font-headline text-5xl md:text-7xl font-bold text-on-surface tracking-tighter leading-none mb-6"
+      >
+        CRM FOR <span class="text-primary">FREELANCERS</span>
+      </h1>
+      <p
+        class="max-w-2xl text-on-surface-variant text-lg font-light leading-relaxed"
+      >
+        A syntactic ecosystem designed for the modern independent contractor.
+        High-precision backend logic meets seamless client management.
+      </p>
+    </div>
+  </section>
+  <!-- Technology Stack Section -->
+  <section class="max-w-7xl mx-auto px-8">
+    <div class="mb-12">
+      <h2
+        class="font-headline text-3xl font-bold text-primary-fixed-dim border-l-4 border-secondary-container pl-6 py-2"
+      >
+        Technology Stack
+      </h2>
+    </div>
+    <!-- Bento-inspired Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+      <!-- Python (Featured) -->
+      <div
+        class="md:col-span-3 bg-surface-container-low p-8 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-colors duration-500"
+      >
+        <div
+          class="absolute -right-8 -bottom-8 opacity-10 group-hover:opacity-20 transition-opacity"
+        >
+          <span class="material-symbols-outlined text-[160px]" data-icon="code"
+            >code</span
+          >
+        </div>
+        <div class="relative z-10">
+          <div class="flex items-center gap-3 mb-6">
+            <span
+              class="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold font-label tracking-widest uppercase"
+              >Language</span
+            >
+          </div>
+          <h3 class="font-headline text-3xl font-bold text-on-surface mb-4">
+            Python
+          </h3>
+          <p class="text-on-surface-variant font-light leading-relaxed">
+            The backbone of the application. Leveraged for its readability and
+            powerful data processing capabilities to handle complex freelancer
+            financial workflows and client relationships.
+          </p>
+        </div>
+      </div>
+      <!-- Flask -->
+      <div
+        class="md:col-span-3 bg-surface-container-highest p-8 rounded-xl flex flex-col justify-between group hover:shadow-[0_0_40px_-10px_rgba(85,216,225,0.2)] transition-all duration-500"
+      >
+        <div>
+          <div class="flex justify-between items-start mb-6">
+            <span
+              class="material-symbols-outlined text-primary text-4xl"
+              data-icon="auto_awesome"
+              >auto_awesome</span
+            >
+          </div>
+          <h3 class="font-headline text-3xl font-bold text-on-surface mb-4">
+            Flask
+          </h3>
+          <p class="text-on-surface-variant font-light leading-relaxed">
+            A lightweight micro-framework selected for its modularity and
+            simplicity, allowing for a highly customized and performant API
+            layer without unnecessary overhead.
+          </p>
+        </div>
+      </div>
+      <!-- MySQL -->
+      <div
+        class="md:col-span-2 bg-surface-container p-8 rounded-xl border-b-2 border-transparent hover:border-primary-fixed-dim transition-all duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-surface-variant rounded-lg flex items-center justify-center mb-6"
+        >
+          <span
+            class="material-symbols-outlined text-secondary"
+            data-icon="database"
+            >database</span
+          >
+        </div>
+        <h3 class="font-headline text-xl font-bold text-on-surface mb-2">
+          MySQL
+        </h3>
+        <p class="text-on-surface-variant text-sm font-light leading-relaxed">
+          Reliable relational data storage for structured CRM data, ensuring
+          acid compliance and data integrity for financial records.
+        </p>
+      </div>
+      <!-- GitHub -->
+      <div
+        class="md:col-span-2 bg-surface-container p-8 rounded-xl border-b-2 border-transparent hover:border-primary-fixed-dim transition-all duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-surface-variant rounded-lg flex items-center justify-center mb-6"
+        >
+          <span
+            class="material-symbols-outlined text-secondary"
+            data-icon="account_tree"
+            >account_tree</span
+          >
+        </div>
+        <h3 class="font-headline text-xl font-bold text-on-surface mb-2">
+          GitHub
+        </h3>
+        <p class="text-on-surface-variant text-sm font-light leading-relaxed">
+          Used for version control and automated CI/CD pipelines, maintaining
+          code quality through rigorous pull request reviews and actions.
+        </p>
+      </div>
+      <!-- Docker -->
+      <div
+        class="md:col-span-2 bg-surface-container p-8 rounded-xl border-b-2 border-transparent hover:border-primary-fixed-dim transition-all duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-surface-variant rounded-lg flex items-center justify-center mb-6"
+        >
+          <span class="material-symbols-outlined text-secondary" data-icon="box"
+            >box</span
+          >
+        </div>
+        <h3 class="font-headline text-xl font-bold text-on-surface mb-2">
+          Docker
+        </h3>
+        <p class="text-on-surface-variant text-sm font-light leading-relaxed">
+          Containerization ensures consistent environments from local
+          development to production, simplifying orchestration and scaling.
+        </p>
+      </div>
+      <!-- AWS -->
+      <div
+        class="md:col-span-6 bg-surface-container-low p-10 rounded-xl flex flex-col md:flex-row gap-8 items-center border-l-4 border-primary"
+      >
+        <div class="flex-1">
+          <h3 class="font-headline text-3xl font-bold text-on-surface mb-4">
+            Amazon Web Services (AWS)
+          </h3>
+          <p class="text-on-surface-variant font-light leading-relaxed">
+            The cloud infrastructure provider powering the deployment. Utilizing
+            EC2 for compute, RDS for managed databases, and S3 for secure
+            document storage. This provides the industrial-grade scalability
+            required for a professional CRM tool.
+          </p>
+        </div>
+        <div
+          class="flex-shrink-0 w-32 h-32 flex items-center justify-center bg-surface-container-highest rounded-full overflow-hidden"
+        >
+          <img
+            class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
+            data-alt="abstract cosmic digital data visualization with flowing blue and purple light particles in deep space"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaGjWu9Nmr4SaOMhkWjkVvzFqiEXrV5LQnXX6GFiiTVrPGnkL3AdK_n8FTTjzbf7LMzDHld00Yufg-w85WUABcv-sn08oYrXAeBRXC694RIsw0Qsez4YHgggEmhvlU1Z6ZPEDLC3PfiqDkZU2dAzCuWxr65x67jzHQDD2AjhjcH1ixqdh5eKGKf3KIRsCcyVYjO97_8SESiX5vOd5ayGSEa-Z5z0H8oOkYWPd3ngfyvAGg_lW_qMZi3wxEkR4VHB1qq_wDoDpU7mw"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

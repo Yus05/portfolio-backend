@@ -1,0 +1,487 @@
+{% extends 'base.html' %} {% block title %} Python Backend Developer {% endblock
+%} {% block content %}
+<main>
+  <section
+    class="relative min-h-screen flex flex-col justify-center pt-20 overflow-hidden blueprint-lines items-center"
+    id="home"
+  >
+    <div
+      class="absolute top-20 right-20 w-96 h-96 opacity-10 pointer-events-none"
+    >
+      <svg
+        class="w-full h-full stroke-primary fill-none stroke-[0.5]"
+        viewbox="0 0 100 100"
+      >
+        <circle cx="50" cy="50" r="45"></circle>
+        <path d="M50 5 L50 95 M5 50 L95 50"></path>
+        <circle cx="50" cy="50" r="20"></circle>
+        <path d="M20 20 L80 80 M80 20 L20 80"></path>
+      </svg>
+    </div>
+    <div
+      class="absolute -bottom-20 -left-20 w-[600px] h-[600px] opacity-[0.03] pointer-events-none"
+    >
+      <svg
+        class="w-full h-full stroke-secondary fill-none stroke-[1]"
+        viewbox="0 0 200 200"
+      >
+        <rect height="180" width="180" x="10" y="10"></rect>
+        <path d="M10 50 H190 M10 100 H190 M10 150 H190"></path>
+        <path d="M50 10 V190 M100 10 V190 M150 10 V190"></path>
+      </svg>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-8 w-full">
+      <p
+        class="font-label uppercase tracking-[0.2em] text-secondary text-sm mb-4"
+      >
+        Architecting Reliability
+      </p>
+      <h1
+        class="font-headline text-6xl md:text-[8rem] font-bold leading-[0.9] text-on-surface mb-8 tracking-tighter"
+      >
+        Backend <br />
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-secondary"
+          >Architect</span
+        >
+      </h1>
+      <p
+        class="text-xl md:text-2xl text-on-surface-variant max-w-2xl font-light leading-relaxed mb-12"
+      >
+        Specializing in
+        <span class="text-primary font-medium"
+          >Python &amp; Scalable Infrastructure</span
+        >. Crafting technical ecosystems that prioritize performance, security,
+        and elegant logic.
+      </p>
+      <div class="flex gap-6">
+        <a
+          class="bg-gradient-to-r from-primary to-secondary-container text-on-primary px-10 py-4 rounded-xl font-bold tracking-widest text-sm hover:shadow-[0_0_30px_rgba(85,216,225,0.3)] transition-all transform active:scale-95"
+          href="#projects"
+        >
+          VIEW MY WORK
+        </a>
+      </div>
+    </div>
+    <div class="hidden lg:block absolute right-20 bottom-20 opacity-40">
+      <div
+        class="font-mono text-[10px] space-y-2 text-primary border-l-2 border-primary/30 pl-6 py-4"
+      >
+        <p class="text-secondary font-bold">// SYSTEM SCHEMATIC v4.2.0</p>
+        <p>def compile_logic(request):</p>
+        <p class="pl-4">infrastructure = ScalableSystem()</p>
+        <p class="pl-4">return infrastructure.deploy(request)</p>
+        <div
+          class="w-64 h-[1px] bg-gradient-to-r from-primary to-transparent my-4"
+        ></div>
+        <p class="text-white">NODE_TYPE: DISTRIBUTED_REPLICA</p>
+        <p>// UPTIME: 99.99%</p>
+        <p>// LATENCY: &lt; 20ms</p>
+      </div>
+    </div>
+  </section>
+  <section
+    class="py-32 px-8 md:px-20 bg-surface-container-lowest/50 relative border-y border-primary/10"
+    id="projects"
+  >
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-16">
+        <div>
+          <h2
+            class="font-label uppercase tracking-[0.2em] text-secondary text-sm mb-4"
+          >
+            Portfolio // Archives
+          </h2>
+          <h3 class="font-headline text-4xl md:text-6xl font-bold">
+            Featured Projects
+          </h3>
+        </div>
+        <div class="hidden md:block h-[1px] flex-1 mx-12 bg-primary/20"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div
+          class="md:col-span-8 group relative overflow-hidden rounded-none bg-surface-container-highest min-h-[450px] flex flex-col justify-end p-8 md:p-12 transition-all hover:bg-surface-variant border border-primary/20 hover:border-primary/60"
+        >
+          <div
+            class="absolute inset-0 z-0 opacity-40 group-hover:opacity-70 transition-opacity"
+          >
+            <img
+              alt="DataStream API Visualization"
+              class="w-full h-full object-cover filter brightness-75 contrast-125"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ0qHUtRukzEB6T2xI21zLob-w7fOtmMwIp4GFh-u567O2sUkMAI-3qC8nZjVSIfMZmen4I06LXpP0tbWdI_Jrv5p5O6IsKEBV2Oyg1si9Y68g5LCN8BiHlXAfLEXnPRRRkShRtoTnr5wmZvViUXyEZ-dgQyAD2TPaFkCGtrnl9kGdj8xrDd0coJjS58kvnuNLLZW2U9d5r-MP1YjYiIZFrZwICABhnkLdt-tS76WnXGckEi3z5qauVyqdwjCYeUa3QgFwo94n9TQ"
+            />
+          </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"
+          ></div>
+          <div class="relative z-20">
+            <div class="flex gap-3 mb-4">
+              <span
+                class="bg-primary/20 text-primary border border-primary/40 px-3 py-1 text-[10px] uppercase font-bold tracking-widest"
+                >Flask</span
+              >
+              <span
+                class="bg-secondary/20 text-secondary border border-secondary/40 px-3 py-1 text-[10px] uppercase font-bold tracking-widest"
+                >Redis</span
+              >
+            </div>
+            <h4
+              class="font-headline text-3xl font-bold mb-4 flex items-center gap-3"
+            >
+              <span class="w-2 h-8 bg-primary block"></span> CRM for Freelancers
+            </h4>
+            <p
+              class="text-on-surface-variant max-w-lg mb-6 leading-relaxed bg-background/40 backdrop-blur-sm p-4"
+            >
+              A comprehensive management suite designed for independent
+              professionals. Features robust client relationship modules,
+              automated invoicing pipelines, and integrated project tracking
+              with real-time financial analytics.
+            </p>
+            <div
+              class="flex items-center text-primary font-bold tracking-widest text-sm cursor-pointer group/link hover:text-secondary transition-colors"
+            >
+              EXPLORE_DOCS.PDF
+              <span
+                class="material-symbols-outlined ml-2 group-hover/link:translate-x-2 transition-transform"
+                >arrow_right_alt</span
+              >
+            </div>
+          </div>
+          <div
+            class="absolute top-4 right-4 text-[8px] font-mono text-primary/30 rotate-90 select-none"
+          >
+            CRM_SYSTEM_ACTIVE_0881
+          </div>
+        </div>
+        <div
+          class="md:col-span-4 group relative overflow-hidden rounded-none bg-surface-container-low p-8 flex flex-col justify-between hover:bg-surface-container-high transition-all border border-secondary/20 hover:border-secondary/60"
+        >
+          <div
+            class="absolute -right-4 -top-4 opacity-10 group-hover:opacity-20 transition-opacity"
+          >
+            <span
+              class="material-symbols-outlined text-[120px] text-secondary"
+              data-icon="hub"
+              >hub</span
+            >
+          </div>
+          <div class="relative z-10">
+            <div class="flex gap-3">
+              <span
+                class="bg-primary/20 text-primary border border-primary/40 px-3 py-1 text-[10px] uppercase font-bold tracking-widest"
+                >Python</span
+              >
+              <span
+                class="bg-secondary/20 text-secondary border border-secondary/40 px-3 py-1 text-[10px] uppercase font-bold tracking-widest"
+                >Flask</span
+              >
+            </div>
+            <h4 class="font-headline text-2xl font-bold mt-6 mb-4">Task API</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+              High-performance RESTful API designed for task management and
+              process orchestration. Features distributed locking, comprehensive
+              audit logging, and seamless integration with existing CI/CD
+              pipelines.
+            </p>
+          </div>
+          <div
+            class="relative h-48 w-full overflow-hidden bg-background border border-primary/10"
+          >
+            <img
+              alt="Architectural Schematic Visualization"
+              class="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ-e3zBVwVGmyxPrF8z9EhZ2d7dWnH5EjyjKEgvUgMmIIXBlGvE2VqMiqh6W4uUuY21LA5ORXCxY7rGcdKRaTAwxKPBLNiiyLEi-yrlnPtegIUXG88ASeb3T-Mlnn5wXDHV3v0ADJt83Dlm3C8VBdhSWcvwpe9oaNFEjC3RKQHKf3Rge15OSrN06spgXBUCZQMJOy_1Tec8VgKT-KEbPbnrK8mNHDqxWd5QNTYExGSVzSPoOSW0dk2JRfeAi7jAH8LTdcnfX6QYdA"
+            />
+            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+          </div>
+        </div>
+        <div
+          class="md:col-span-12 group relative overflow-hidden rounded-none bg-surface-container-high p-8 md:p-12 transition-all flex flex-col md:flex-row items-center gap-12 hover:bg-surface-variant border border-primary/20 circuit-pattern"
+        >
+          <div class="flex-1 order-2 md:order-1 relative z-10">
+            <span
+              class="bg-primary/20 text-primary border border-primary/40 px-3 py-1 text-[10px] uppercase font-bold tracking-widest"
+              >Vue.js</span
+            ><span
+              class="bg-secondary/20 text-secondary border border-secondary/40 px-3 py-1 text-[10px] uppercase font-bold tracking-widest ml-3"
+              >Tailwind CSS</span
+            ><span
+              class="bg-primary/20 text-primary border border-primary/40 px-3 py-1 text-[10px] uppercase font-bold tracking-widest ml-3"
+              >Node.js</span
+            >
+            <h4
+              class="font-headline text-3xl font-bold mt-6 mb-4 drop-shadow-[0_0_10px_rgba(85,216,225,0.3)]"
+            >
+              Software Agency Website
+            </h4>
+            <p
+              class="text-on-surface-variant max-w-2xl mb-8 leading-relaxed bg-background/60 p-6 border-l-4 border-secondary"
+            >
+              A high-performance, responsive platform for a boutique software
+              agency. Features automated project intake, a dynamic service
+              catalog, and seamless integration with client management tools.
+            </p>
+            <div class="flex gap-4">
+              <div
+                class="p-3 bg-surface-container-highest border border-primary/30 text-primary"
+              >
+                <span class="material-symbols-outlined">language</span>
+              </div>
+              <div
+                class="p-3 bg-surface-container-highest border border-primary/30 text-primary"
+              >
+                <span class="material-symbols-outlined">code</span>
+              </div>
+              <div
+                class="p-3 bg-surface-container-highest border border-primary/30 text-primary"
+              >
+                <span class="material-symbols-outlined">work</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-1/3 h-64 overflow-hidden order-1 md:order-2 bg-background shadow-2xl relative border border-secondary/40"
+          >
+            <img
+              alt="Software Agency Website Architecture"
+              class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIJpVypPPUkHIFCOrvJ00QxsxoqNt4uM8n5wGGigMKnnn35Sec3VdiEDjrNROYng5a7bQAM8zHeBeG_34UHqDWdavqTsG5fsHAZd3hIRiyEugcJ2rZ_PU5TZyw6-YfMz-kKM4M1yZe2kbdqIaKjeutSp_CxAd5mlE1bpIHtj1qdoJvWa1kB-aCsNQnVO_wL15yREcdHzF0AdJY0I6hx9eCaV6qkJXhhd0yNgQ59gxAN0os2WpiAk2BExvTRswXU0iejmIMjwYz_bc"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-secondary/40 to-transparent"
+            ></div>
+            <div
+              class="absolute inset-2 border border-primary/40 pointer-events-none"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-32 px-8 md:px-20 relative overflow-hidden" id="skills">
+    <div
+      class="absolute inset-0 opacity-5 pointer-events-none -z-10 bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-repeat opacity-5"
+    ></div>
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-start">
+      <div class="w-full md:w-1/3">
+        <h2
+          class="font-label uppercase tracking-[0.2em] text-secondary text-sm mb-4"
+        >
+          Core Competencies
+        </h2>
+        <h3 class="font-headline text-4xl font-bold mb-8 leading-tight">
+          Forging the <br /><span class="text-primary italic"
+            >Digital Backbone</span
+          >
+        </h3>
+        <p
+          class="text-on-surface-variant leading-relaxed mb-8 border-l-2 border-secondary/30 pl-4"
+        >
+          My stack is curated for stability and scale. I prioritize technologies
+          that provide strict typing, excellent documentation, and robust
+          performance under load.
+        </p>
+        <div
+          class="text-[10px] font-mono text-primary/40 p-4 border border-primary/10 bg-primary/5"
+        >
+          SCAN_HARDWARE... OK<br />
+          LINK_INTERFACE... OK<br />
+          SYSMON_ACTIVE... 100%
+        </div>
+      </div>
+      <div class="w-full md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div
+          class="bg-surface-container-high/40 backdrop-blur-sm p-6 rounded-none border-b-4 border-transparent hover:border-primary transition-all group relative overflow-hidden border border-primary/10"
+        >
+          <div
+            class="absolute top-0 right-0 w-8 h-8 bg-primary/10 rotate-45 translate-x-4 -translate-y-4"
+          ></div>
+          <span
+            class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:drop-shadow-[0_0_8px_rgba(85,216,225,0.8)]"
+            data-icon="code"
+            >code</span
+          >
+          <h5 class="font-headline font-bold text-lg mb-1">Python</h5>
+          <p
+            class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em]"
+          >
+            Logic &amp; Core
+          </p>
+        </div>
+        <div
+          class="bg-surface-container-high/40 backdrop-blur-sm p-6 rounded-none border-b-4 border-transparent hover:border-primary transition-all group relative overflow-hidden border border-primary/10"
+        >
+          <span
+            class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:drop-shadow-[0_0_8px_rgba(85,216,225,0.8)]"
+            data-icon="terminal"
+            >terminal</span
+          >
+          <h5 class="font-headline font-bold text-lg mb-1">Flask</h5>
+          <p
+            class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em]"
+          >
+            API Architecture
+          </p>
+        </div>
+        <div
+          class="bg-surface-container-high/40 backdrop-blur-sm p-6 rounded-none border-b-4 border-transparent hover:border-primary transition-all group relative overflow-hidden border border-primary/10"
+        >
+          <span
+            class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:drop-shadow-[0_0_8px_rgba(85,216,225,0.8)]"
+            data-icon="database"
+            >database</span
+          >
+          <h5 class="font-headline font-bold text-lg mb-1">MySQL</h5>
+          <p
+            class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em]"
+          >
+            Data Persistence
+          </p>
+        </div>
+        <div
+          class="bg-surface-container-high/40 backdrop-blur-sm p-6 rounded-none border-b-4 border-transparent hover:border-primary transition-all group relative overflow-hidden border border-primary/10"
+        >
+          <span
+            class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:drop-shadow-[0_0_8px_rgba(85,216,225,0.8)]"
+            data-icon="git"
+            >gite</span
+          >
+          <h5 class="font-headline font-bold text-lg mb-1">GitHub</h5>
+          <p
+            class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em]"
+          >
+            Version Control
+          </p>
+        </div>
+        <div
+          class="bg-surface-container-high/40 backdrop-blur-sm p-6 rounded-none border-b-4 border-transparent hover:border-primary transition-all group relative overflow-hidden border border-primary/10"
+        >
+          <span
+            class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:drop-shadow-[0_0_8px_rgba(85,216,225,0.8)]"
+            data-icon="grid_view"
+            >grid_view</span
+          >
+          <h5 class="font-headline font-bold text-lg mb-1">Docker</h5>
+          <p
+            class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em]"
+          >
+            Containerization
+          </p>
+        </div>
+        <div
+          class="bg-surface-container-high/40 backdrop-blur-sm p-6 rounded-none border-b-4 border-transparent hover:border-primary transition-all group relative overflow-hidden border border-primary/10"
+        >
+          <span
+            class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:drop-shadow-[0_0_8px_rgba(85,216,225,0.8)]"
+            data-icon="cloud"
+            >cloud</span
+          >
+          <h5 class="font-headline font-bold text-lg mb-1">AWS</h5>
+          <p
+            class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em]"
+          >
+            Cloud Infra
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-32 px-8 md:px-20 bg-surface relative" id="contact">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div>
+        <h2
+          class="font-label uppercase tracking-[0.2em] text-secondary text-sm mb-4"
+        >
+          Connection Protocol
+        </h2>
+        <h3 class="font-headline text-5xl font-bold mb-8">
+          Let's build something <br /><span class="text-primary"
+            >resilient</span
+          >
+          together.
+        </h3>
+        <p
+          class="text-on-surface-variant mb-12 max-w-md bg-surface-container-low p-6 border-r-2 border-primary/40"
+        >
+          Available for high-scale architecture consulting, backend engineering
+          roles, and open-source collaborations.
+        </p>
+        <div class="space-y-6">
+          <a class="flex items-center gap-4 group" href="#">
+            <div
+              class="w-12 h-12 rounded-none bg-surface-container-highest border border-primary/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all group-hover:shadow-[0_0_15px_rgba(85,216,225,0.5)]"
+            >
+              <span
+                class="material-symbols-outlined"
+                data-icon="alternate_email"
+                >alternate_email</span
+              >
+            </div>
+            <span class="font-headline font-medium tracking-wide"
+              >architect@syntax.dev</span
+            >
+          </a>
+          <a class="flex items-center gap-4 group" href="#">
+            <div
+              class="w-12 h-12 rounded-none bg-surface-container-highest border border-primary/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all group-hover:shadow-[0_0_15px_rgba(85,216,225,0.5)]"
+            >
+              <span class="material-symbols-outlined" data-icon="terminal"
+                >terminal</span
+              >
+            </div>
+            <span class="font-headline font-medium tracking-wide"
+              >github.com/syntax_arch</span
+            >
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-background/80 backdrop-blur-xl p-8 md:p-12 rounded-none shadow-2xl relative overflow-hidden border border-primary/30 glitch-border"
+      >
+        <form class="space-y-8 relative z-10">
+          <div>
+            <label
+              class="font-label uppercase tracking-widest text-[10px] text-primary mb-2 block font-bold"
+              >Your Designation // AUTH_TYPE</label
+            >
+            <input
+              class="w-full bg-surface-container-low/50 border-0 border-b border-primary/30 focus:border-primary focus:ring-0 text-on-surface px-0 py-3 transition-all placeholder:text-outline/30 uppercase text-xs tracking-widest"
+              placeholder="e.g. Project Lead"
+              type="text"
+            />
+          </div>
+          <div>
+            <label
+              class="font-label uppercase tracking-widest text-[10px] text-primary mb-2 block font-bold"
+              >Protocol / Message Body</label
+            >
+            <textarea
+              class="w-full bg-surface-container-low/50 border-0 border-b border-primary/30 focus:border-primary focus:ring-0 text-on-surface px-0 py-3 transition-all placeholder:text-outline/30 text-sm"
+              placeholder="Define objective..."
+              rows="4"
+            ></textarea>
+          </div>
+          <button
+            class="w-full bg-transparent border border-primary text-primary py-4 rounded-none font-bold tracking-[0.4em] uppercase text-xs hover:bg-primary/10 transition-all shadow-lg hover:shadow-primary/30 group"
+          >
+            <span
+              class="inline-block group-hover:translate-x-1 transition-transform"
+              >INITIALIZE_HANDSHAKE_</span
+            >
+          </button>
+        </form>
+        <div
+          class="absolute -bottom-10 -right-10 opacity-5 pointer-events-none select-none"
+        >
+          <span
+            class="material-symbols-outlined text-[300px] text-primary"
+            data-icon="deployed_code"
+            >deployed_code</span
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
