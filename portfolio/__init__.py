@@ -1,13 +1,18 @@
+import os 
 from flask import Flask, render_template
+
 
 def create_app():
     
     app = Flask(__name__)
     
-    # Configuracion del proyecto
+    secret_key = os.environ.get('SECRET_KEY')
+    
+    if not secret_key and not app.debug:
+        raise ValueError("No se ha configurado la variable de entorno SECRET_KEY")
+    
     app.config.from_mapping(
-        DEBUG = True,
-        SECRET_KEY = 'dev'
+        SECRET_KEY = secret_key
     )
     
     # Registro de Blueprints
