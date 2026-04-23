@@ -51,7 +51,7 @@ def create_app():
             message_body = form.message.data
             
             msg = Message(subject=f"NUEVO MENSAJE PORTFOLIO: {name}",
-              sender=os.environ.get('MAIL_USERNAME'), 
+              sender='ysomaza@gmail.com', 
               recipients=['ysomaza@gmail.com'],
               body=message_body 
              )
