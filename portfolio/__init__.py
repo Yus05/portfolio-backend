@@ -1,9 +1,12 @@
 import os 
+from dotenv import load_dotenv
 from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_mail import Mail, Message
 from flask_wtf.csrf import CSRFProtect
 
 from .forms import ContactForm
+
+load_dotenv()
 
 mail = Mail()
 csrf = CSRFProtect()
@@ -48,7 +51,7 @@ def create_app():
             message_body = form.message.data
             
             msg = Message(subject=f"NUEVO MENSAJE PORTFOLIO: {name}",
-              sender=app.config.get('MAIL_DEFAULT_SENDER'), 
+              sender=os.environ.get('MAIL_USERNAME'), 
               recipients=['ysomaza@gmail.com'],
               body=message_body 
              )
