@@ -48,10 +48,10 @@ def create_app():
             message_body = form.message.data
             
             msg = Message(subject=f"NUEVO MENSAJE PORTFOLIO: {name}",
-                          sender=app.config['MAIL_USERNAME'],
-                          recipients=['ysomaza@gmail.com'],
-                          body=f"Nombre: {name}\nEmail: {email}\nMensaje: {message_body}"
-                          )
+              sender=app.config.get('MAIL_DEFAULT_SENDER'), 
+              recipients=['ysomaza@gmail.com'],
+              body=message_body 
+             )
             
             msg.body = f"""
             Has recibido un nuevo mensaje de contacto:
