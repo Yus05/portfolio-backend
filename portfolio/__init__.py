@@ -25,7 +25,8 @@ def create_app():
         MAIL_PORT = 587,
         MAIL_USE_TLS = True,
         MAIL_USERNAME=os.environ.get('MAIL_USERNAME'),
-        MAIL_PASSWORD=os.environ.get('MAIL_PASSWORD')
+        MAIL_PASSWORD=os.environ.get('MAIL_PASSWORD'),
+        MAIL_DEFAULT_SENDER=os.environ.get('MAIL_USERNAME')
     )
     
     mail.init_app(app)
@@ -48,7 +49,9 @@ def create_app():
             
             msg = Message(subject=f"NUEVO MENSAJE PORTFOLIO: {name}",
                           sender=app.config['MAIL_USERNAME'],
-                          recipients=['ysomaza@gmail.com'])
+                          recipients=['ysomaza@gmail.com'],
+                          body=f"Nombre: {name}\nEmail: {email}\nMensaje: {message_body}"
+                          )
             
             msg.body = f"""
             Has recibido un nuevo mensaje de contacto:
